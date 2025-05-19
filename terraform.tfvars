@@ -12,3 +12,4 @@ public_ip_name="jenkins-public-ip"
 allocation_method="Dynamic"
 nic_name="jenkins-nic"
 ssh_public_key_path="~/.ssh/id_rsa.pub"
+
