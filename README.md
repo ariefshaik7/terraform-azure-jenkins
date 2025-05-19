@@ -143,7 +143,24 @@ ssh_public_key_path = "~/.ssh/id_rsa.pub"
     ```bash
     terraform refresh
     ```
+## Jenkins Initial Admin Password
 
+After Jenkins is installed on the VM, it generates an initial admin password used to unlock Jenkins for the first time.  
+This password is stored inside the VM at:
+```bash
+    /var/lib/jenkins/secrets/initialAdminPassword
+```
+## Accessing Jenkins and SSH
+You can get the public IP address after deployment from Terraform output:
+
+Jenkins URL:
+```bash
+    http://<public_ip>:8080
+```
+SSH command:
+```bash
+    ssh -i ~/.ssh/id_rsa ${var.admin_username}@<public_ip>
+```
 
 ## License
 
