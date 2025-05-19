@@ -1,4 +1,4 @@
-# 🌐 modular-jenkins-on-azure
+# 🌐 Modular Azure Jenkins Deployment using Terraform
 
 Modular Terraform project to provision a Jenkins-ready virtual machine on Azure — complete with networking, security, and automated installation.
 
