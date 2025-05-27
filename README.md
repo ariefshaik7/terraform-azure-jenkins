@@ -84,6 +84,11 @@ There are several ways to authenticate to Azure when using Terraform:
 
 ---
 
+### 📌 Make sure you have a remote backend configured.
+
+
+---
+
 Login to your Azure account using:
 
 ```bash
@@ -110,7 +115,7 @@ ssh_public_key_path = "~/.ssh/id_rsa.pub"
 2. Initialize Terraform:
 
     ```bash
-    terraform init
+    erraform init -backend-config="backend.config"
     ```
 3. Validate Configuration:
 

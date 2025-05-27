@@ -57,13 +57,7 @@ resource "azurerm_virtual_machine_extension" "install_jenkins" {
 
   settings = <<SETTINGS
     {
-      "script": "${base64encode(file("${path.module}/../../scripts/install_jenkins.sh"))}",
-      "skipDos2Unix": true
+      "script": "${base64encode(file("${path.module}/../../scripts/install_jenkins.sh"))}"
     }
 SETTINGS
-
-  timeouts {
-    create = "30m"
-    delete = "30m"
-  }
 }
